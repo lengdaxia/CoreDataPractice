@@ -103,7 +103,7 @@ extension ViewController: UITableViewDelegate{
 	
 	func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 		
-		guard let walkToRemove = currentDog?.walks?[indexPath.row] as? Walk,
+		guard let _ = currentDog?.walks?[indexPath.row] as? Walk,
 					editingStyle == .delete
 					else { return }
 		
